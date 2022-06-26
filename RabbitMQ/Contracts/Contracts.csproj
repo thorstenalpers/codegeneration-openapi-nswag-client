@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Consumer.xml</DocumentationFile>
+    <RootNamespace>Examples.RabbitMQ.Contracts</RootNamespace>
+    <AssemblyName>Examples.RabbitMQ.Contracts</AssemblyName>
+  </PropertyGroup>
+
+</Project>

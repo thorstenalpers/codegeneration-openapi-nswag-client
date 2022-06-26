@@ -1,0 +1,1 @@
+openapi-generator-cli generate -i petstore-swagger.json -g aspnetcore -o ./ --additional-properties=sourceFolder=../,packageName=OpenapiGenerator.Server

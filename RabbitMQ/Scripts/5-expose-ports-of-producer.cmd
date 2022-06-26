@@ -1,0 +1,3 @@
+kubectl apply -f ./producer-nodeport.yaml
+
+set /p DUMMY=Hit ENTER to continue...

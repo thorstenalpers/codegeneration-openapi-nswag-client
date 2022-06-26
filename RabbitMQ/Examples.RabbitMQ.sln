@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{636B65B4-FB08-4AE7-A4FF-DF60F7E85550}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consumer", "Consumer\Consumer.csproj", "{DEAA8434-6DC8-4595-A94D-8B3A29F5E74B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Producer", "Producer\Producer.csproj", "{9E4B0E96-4685-4F6A-9778-9A0B1AD90FC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{25B91263-7EEC-4CB4-A2D3-65F82208A2A3}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{ADE43849-0A0D-4811-B64A-DD22D473E0D2}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\1-install-rabbitmq.cmd = Scripts\1-install-rabbitmq.cmd
+		Scripts\2-apply-nodeports.cmd = Scripts\2-apply-nodeports.cmd
+		Scripts\3-docker-build.cmd = Scripts\3-docker-build.cmd
+		Scripts\4-helm-install-charts.cmd = Scripts\4-helm-install-charts.cmd
+		Scripts\5-expose-ports-of-producer.cmd = Scripts\5-expose-ports-of-producer.cmd
+		Scripts\6-helm-upgrade-charts.cmd = Scripts\6-helm-upgrade-charts.cmd
+		Scripts\7-helm-uninstall-charts.cmd = Scripts\7-helm-uninstall-charts.cmd
+		Scripts\8-helm-show-chart.cmd = Scripts\8-helm-show-chart.cmd
+		Scripts\nginx-values.yaml = Scripts\nginx-values.yaml
+		Scripts\producer-nodeport.yaml = Scripts\producer-nodeport.yaml
+		Scripts\rabbitmq-amqp-nodeport.yaml = Scripts\rabbitmq-amqp-nodeport.yaml
+		Scripts\rabbitmq-ui-ingress.yaml = Scripts\rabbitmq-ui-ingress.yaml
+		Scripts\rabbitmq-values.yaml = Scripts\rabbitmq-values.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{636B65B4-FB08-4AE7-A4FF-DF60F7E85550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{636B65B4-FB08-4AE7-A4FF-DF60F7E85550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{636B65B4-FB08-4AE7-A4FF-DF60F7E85550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{636B65B4-FB08-4AE7-A4FF-DF60F7E85550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEAA8434-6DC8-4595-A94D-8B3A29F5E74B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEAA8434-6DC8-4595-A94D-8B3A29F5E74B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEAA8434-6DC8-4595-A94D-8B3A29F5E74B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEAA8434-6DC8-4595-A94D-8B3A29F5E74B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E4B0E96-4685-4F6A-9778-9A0B1AD90FC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E4B0E96-4685-4F6A-9778-9A0B1AD90FC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E4B0E96-4685-4F6A-9778-9A0B1AD90FC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E4B0E96-4685-4F6A-9778-9A0B1AD90FC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ADE43849-0A0D-4811-B64A-DD22D473E0D2} = {25B91263-7EEC-4CB4-A2D3-65F82208A2A3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDB37A7B-AE8D-4894-8E55-D5B6B2EB9E54}
+	EndGlobalSection
+EndGlobal
